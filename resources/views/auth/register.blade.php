@@ -14,7 +14,8 @@
 <body>
     <div class="container">
         <div class="text-center">
-            <img src="{{ asset('assets') }}/backend/assets/img/JobSentra.png" alt="Metis Logo" style="max-width: 350px">
+            <img src="{{ asset('assets') }}/frontend/images/milangkori_logo.png" alt="Metis Logo"
+                style="max-width: 350px">
         </div>
         <div class="tab-content">
             <div id="register" class="tab-pane active">
@@ -42,8 +43,9 @@
                             <strong>Email sudah terdaftar !</strong>
                         </span>
                     @enderror
-                    <input type="number" name="no_hp" class="input-block-level @error('no_hp') is-invalid @enderror"
-                        value="{{ old('no_hp') }}" style="margin-bottom: 3%" required>
+                    <input type="number" name="no_hp" placeholder="Nomor Telepone"
+                        class="input-block-level @error('no_hp') is-invalid @enderror" value="{{ old('no_hp') }}"
+                        style="margin-bottom: 3%" required>
                     @error('no_hp')
                         <span class="invalid-feedback" role="alert">
                             <strong>Nomor Telephone tidak boleh kosong !</strong>
